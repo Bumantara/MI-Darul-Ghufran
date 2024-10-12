@@ -233,6 +233,10 @@ a:focus {
   font-size: 24px;
 }
 
+.navbar-brand .logo-image {
+  height: 50px; /* Ukuran default logo */
+}
+
 .navbar-brand span {
   color: #2c7873;
 }
@@ -830,13 +834,7 @@ a:focus {
   background-color: #159ec0;
 }
 /* Style for the logo and text */
-.navbar-brand {
-  display: flex;
-  align-items: center; /* Aligns the logo and text vertically */
-  font-size: 20px; /* Adjust the size of the text */
-  font-weight: bold;
-  color: #ffffff; /* Text color */
-}
+
 
 .logo-image {
   height: 40px; /* Adjust the height of the logo */
@@ -885,11 +883,7 @@ a:focus {
 }
 
 /* Navbar Styling */
-.navbar-brand {
-  font-size: 20px;
-  font-weight: bold;
-  color: #fff;
-}
+
 
 .navbar-nav .nav-link {
   color: #fff;
@@ -915,6 +909,23 @@ a:focus {
   height: auto;
 }
 
+/* Hero Section Background */
+.hero_bg_box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.hero_bg_box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Gambar akan mencakup seluruh area div */
+  object-position: center; /* Gambar berada di tengah */
+}
 
 
 

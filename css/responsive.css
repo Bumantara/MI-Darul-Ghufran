@@ -112,3 +112,71 @@
     max-width: 1270px;
   }
 }
+/* Responsif untuk tablet dan layar yang lebih kecil */
+@media (max-width: 992px) {
+  .contact_container {
+    flex-direction: column; /* Ubah layout dari horizontal ke vertikal */
+    align-items: center;
+  }
+
+  .contact_info, .contact_form {
+    width: 100%; /* Buat kedua kolom full width */
+    margin-bottom: 20px; /* Tambahkan margin bawah untuk pemisahan */
+  }
+}
+
+/* Responsif untuk layar ponsel */
+@media (max-width: 576px) {
+  .contact_info p {
+    font-size: 14px; /* Kecilkan ukuran teks untuk layar kecil */
+  }
+
+  .map-box iframe {
+    height: 250px; /* Sesuaikan tinggi peta untuk layar ponsel */
+  }
+
+  .contact_form form input, .contact_form form textarea {
+    padding: 8px; /* Kecilkan padding di input form */
+  }
+
+  .contact_form form button {
+    width: 100%; /* Tombol kirim memenuhi lebar layar pada ponsel */
+  }
+}
+/* Responsif untuk layar kecil */
+@media (max-width: 768px) {
+  .hero_bg_box img {
+    object-fit: contain; /* Gambar disesuaikan agar seluruh gambar terlihat di layar kecil */
+    height: auto; /* Ketinggian gambar akan otomatis menyesuaikan dengan lebar */
+    width: 100%; /* Lebar gambar menyesuaikan lebar layar */
+    object-position: center; /* Gambar tetap berada di tengah */
+  }
+  .hero_bg_box img {
+    content: url('/Img/bg1.jpeg'); /* Ganti dengan gambar versi mobile */
+    object-fit: cover;
+  }
+  /* Mengecilkan logo */
+  .navbar-brand .logo-image {
+    height: 35px; /* Ukuran logo saat layar kecil */
+  }
+
+  /* Mengecilkan teks navbar */
+  .navbar-brand {
+    font-size: 18px; /* Ukuran teks navbar saat layar kecil */
+  }
+
+  /* Mengecilkan teks di hero section */
+  .centered_section .main-heading {
+    font-size: 28px; /* Ukuran teks heading saat layar kecil */
+  }
+
+  .centered_section .sub-heading {
+    font-size: 16px; /* Ukuran teks subheading saat layar kecil */
+  }
+
+  /* Mengecilkan logo di hero section */
+  .centered_section .center-logo {
+    height: 150px; /* Ukuran logo di hero section saat layar kecil */
+  }
+}
+
